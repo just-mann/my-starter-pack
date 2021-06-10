@@ -1,0 +1,34 @@
+{
+  "name": "my-starter-pack",
+  "version": "1.0.0",
+  "description": "React and Express Starter Pack",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just-mann/my-starter-pack.git"
+  },
+  "author": "Justin Kollie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/just-mann/my-starter-pack/issues"
+  },
+  "homepage": "https://github.com/just-mann/my-starter-pack#readme",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.9",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "proxy": "http://localhost:5000"
+}
